@@ -1,2 +1,11 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿internal class Program
+{
+    private static void Main(string[] args)
+    {
+        Console.Write("Enter some words: ");
+        var words = Console.ReadLine();
+
+        words = words!.Replace(",", "\t");
+        Console.WriteLine(words);
+    }
+}
